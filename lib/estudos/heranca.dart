@@ -1,4 +1,4 @@
-class Animal {
+abstract class Animal {
   String _nome;
   int _idade;
 
@@ -27,6 +27,9 @@ class Animal {
   void comunicar() {
     print('som!');
   }
+
+  // criar metodo abstrado
+  void morrer();
 }
 
 class Gato extends Animal {
@@ -35,6 +38,18 @@ class Gato extends Animal {
   @override
   void comunicar() {
     print('miauu');
+  }
+
+  @override
+  void dormir() {
+    // chamando o metodo da super classe dentro do metodo da classe
+    super.dormir();
+    print('como um gato');
+  }
+
+  @override
+  void morrer() {
+    print('gato morrido');
   }
 }
 
@@ -45,4 +60,24 @@ class Cachorro extends Animal {
   void comunicar() {
     print('au au');
   }
+
+  @override
+  String toString() {
+    return 'Cachorro $nome. Idade: $idade';
+  }
+
+  @override
+  void morrer() {
+    print('cachorro morrido');
+  }
 }
+
+class Hamster extends Animal {
+  Hamster(super.nome, super.idade);
+
+  @override
+  void morrer() {
+    print('hamster morrido');
+  }
+}
+
