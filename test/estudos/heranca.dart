@@ -1,11 +1,11 @@
 import 'package:meu_primeiro_app_flutter/estudos/heranca.dart';
 
 void main() {
-  Cachorro cachorro = Cachorro('Rex', 6);
-  Gato gato = Gato('Januario', 3);
-  Hamster hamster = Hamster('Januario segundo', 3);
-
-  List<Animal> animais = [cachorro, gato];
+  // Cachorro cachorro = Cachorro('Rex', 6);
+  // Gato gato = Gato('Januario', 3);
+  // Hamster hamster = Hamster('Januario segundo', 3);
+  //
+  // List<Animal> animais = [cachorro, gato];
 
   // animais.forEach((animal) {
   //   if (animal is Cachorro) {
@@ -28,7 +28,7 @@ void main() {
 
   // Animal a = Animal(); // nao permite mais instanciar pois a classe é abstrata
 
-  cachorro.morrer();
-  gato.morrer();
-  hamster.morrer();
+  // cachorro.morrer();
+  // gato.morrer();
+  // hamster.morrer();
 }
